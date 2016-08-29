@@ -615,6 +615,7 @@ static int stm32l4_probe(struct flash_bank *bank)
 	/* set max flash size depending on family */
 	switch (device_id & 0xfff) {
 	case 0x415:
+	case 0x435:
 		break;
 	default:
 		LOG_WARNING("Cannot identify target as a STM32L4 family.");
